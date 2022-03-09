@@ -1,0 +1,535 @@
+ *{
+    box-sizing: border-box;    
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
+}
+
+.conteiner {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: rgb(248, 237, 223);
+}
+
+/* header start */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 190px 0 190px;
+    align-items: center;
+}
+
+.header__nav {
+    margin-left: auto;
+}
+
+.heder__list {
+    display: flex;
+    list-style: none;
+    column-gap: 35px;
+    margin-right: 35px;
+}
+
+.header__list-link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #B8BECD;
+}
+ 
+.header__list-link.header__list-link--active {
+    font-weight: 500;
+    color: #202336;
+}
+
+.btn {
+    display: block;
+    width: 132px;
+    height: 44px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn--seconary {
+    color: #FB8F1D;
+    border: 1px solid #FB8F1D;
+}
+
+
+.btn.btn--primary {
+    color: #ffffff;
+    background-color: #FB8F1D;
+}
+
+.header__butoons-wrapper {
+    display: flex;
+    column-gap: 18px;
+}
+/* header end */
+
+/* explore start */
+.explore {
+    padding: 74px 105px 0 190px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.explore::after {
+    content: url(../img/circle.png);
+    position: absolute;
+    display: block;
+    top: 404px;
+    left: 80px;
+    width: 26px;
+}
+
+.explore__content {
+    padding-top: 40px;
+    position: relative;
+}
+
+.explore__content::after{
+    content: url(../img/circle_small.png);
+    position: absolute;
+    display: block;
+    left: 542px;
+    bottom: 28px;
+    width: 20px;
+    transform: translateY(50%);
+
+}
+
+.explore__header {
+    width: 100%;
+    max-height: 160px;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    color: #202336;
+    margin-bottom: 74px;
+    position: relative;
+}
+
+.explore__header::before {
+    content: url(../img/cross.png);
+    display: block;
+    position: absolute;
+    bottom: 68%;
+    left: 466px;
+}
+
+.explore__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.explore__form-text {
+    width: 100%;
+    height: 27px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #202336;
+    margin-bottom: 71px;
+    position: relative;
+}
+
+.explore__form-text::before {
+    content: '';
+    position: absolute;
+    top: 47px;
+    left: 0;
+    width: 32px;
+    height: 3px;
+    background: #202336;
+    display: block;
+    border-radius: 2px;
+}
+
+.explore__form-title {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 35px;
+    column-gap: 30px;
+}
+
+.explore__form-wrap{
+    position: relative;
+    width: 220px;
+    height: 52px;
+}
+
+.explore__form-wrap::before {
+    content: url(../img/vector.png);
+    position: absolute;
+    top: 50%;
+    right: 26px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 20px;
+    display: block;
+    pointer-events: none; /* псевдоэлемент делаем кликабельным */
+
+}
+
+.explore__form-select {
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border: 0.8px solid #AFB0B9;
+    border-radius: 6px;
+    padding-left: 31px;
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 32px;
+    color: #4A4C53;
+    font-family: Inter;
+}
+
+.explore__form-select:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 1px #AFB0B9, 0px 0px 10px #9b9b9c;
+}
+
+.explore__butoons-wrapper {
+    padding-top: 51px;
+}
+
+.explore__btn {    
+    width: 180px;
+    height: 52px;
+}   
+/* explore end */
+
+/* new way start */
+.new-way {
+    padding-top: 270px;
+}
+
+.new-wey__wrapper {
+    display: flex;
+    width: 1242px;
+    height: 550px;
+    margin: 10px 217px 0 141px;
+}
+
+.new-wey__content {
+    padding-top: 100px;
+    padding-left: 102px;
+    position: relative;
+
+}
+
+.new-wey__content::after {
+    content: url(../img/cross_2.svg);
+    display: block;
+    top: 0;
+    left: 26px;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.new-wey__content::before {
+    content: url(../img/circle_small.png);
+    display: block;
+    bottom: 165px;
+    right: 138px;
+    position: absolute;
+}
+
+.caption {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    color: #000000;
+    padding-bottom: 20px;
+}
+
+.new-wey__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    color: #7D7987;
+    padding-bottom: 33px;
+}
+
+.new-wey__btn {
+    width: 164px;
+    height: 48px;
+}
+/* new way end */
+
+/* destinations start */
+.destinations {
+    margin: 262px 239px 0 121px;
+    width: 1240px;
+    height: 532px;
+    position: relative;
+}
+
+.destinations::after {
+    content: url(../img/cross_2.svg);
+    display: block;
+    top: 330px;
+    left: 0;
+    position: absolute;
+}
+
+.destinations::before{
+    content: url(../img/circle_small.png);
+    display: block;
+    bottom: 0;
+    left: 610px;
+    position: absolute;
+}
+
+.destinations__header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.destinations__header::after {
+    content: url(../img/circle_small.png);
+    display: block;
+    top: 0;
+    right: 172px;
+    position: absolute;
+}
+
+.destinations__caption {
+    width: 90%;
+    height: 50px;
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 119px;
+}
+
+.destinations__link-wrap{
+    position: relative;
+    width: 10%;
+}
+
+.destinations__link-wrap::before {
+    content: url(../img/Vector_2.svg);
+    position: absolute;
+    width: 4px;
+    height: 9px;
+    right: 0;
+    bottom: 10px;
+    transform: translate(-50%, -80%);
+    transition-duration: 0.3s;
+}
+
+.destinations__link-wrap:hover::before {
+    right: -5px;
+    transition-duration: 0.3s;
+}
+
+.destinations__link {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 60px;
+    color: #FB8F1D;
+    padding-right: 15px;
+    text-align: end;
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+
+.destinations__content {
+    margin-top: 56px;
+    display: flex;
+    column-gap: 25px;
+    padding-left: 119px;
+    position: relative;
+}
+
+.destinations__image--indonesia, 
+.destinations__image--china,
+.destinations__image--switzerland,
+.destinations__image--montenegro {
+    width: 261px;
+    height: 332px;
+    border-radius: 8px;
+    display: flex;
+    align-items: end;
+}
+
+.destinations__image--indonesia {
+    background-image: url(../img/indonesia-ico.jpg);
+}
+
+.destinations__image--china {
+    background-image: url(../img/china-ico.jpg);
+}
+
+.destinations__image--switzerland {
+    background-image: url(../img/switzerland-ico.jpg);
+}
+
+.destinations__image--montenegro {
+    background-image: url(../img/montenegro-ico.jpg);
+}
+
+.destinations__image--indonesia, 
+.destinations__image--china,
+.destinations__image--switzerland,
+.destinations__image--montenegro:hover{
+    cursor: pointer;
+}
+
+.destinations__image--indonesia:active::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(119px, 0px);
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/indonesia.jpg");
+    background-repeat: no-repeat;
+}
+
+.destinations__image--china:active::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(249px, 0px);
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/china.jpg");
+    background-repeat: no-repeat;
+}
+
+.destinations__image--switzerland:active::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(582px, 0);
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/switzerland.jpg");
+    background-repeat: no-repeat;
+}
+
+.destinations__image--montenegro:active::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left:inherit;
+    transform: translate(-206px, 0);
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/montenegro.jpg");
+    background-repeat: no-repeat;
+}
+
+.destinations__image-signature {
+    width: 120px;
+    height: 56px;
+    background-color: #fff;
+    border-radius: 0px 6px 0px 0px;
+}
+
+.destinations__image-text--top {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.destinations__image-text--bottom {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #80918E;
+}
+/* destinations end */
+
+
+/* guides start */
+
+.guides {
+    position: relative;
+}
+
+.guides__wrapper {
+    display: flex;
+    justify-content: start;
+    gap: 49px;
+    width: 1206px;
+    height: 542px;
+    margin: 173px 154px 0 240px;
+}
+
+.guides__content{
+    margin-top: 152px;
+    width: 481px;
+    height: 303px;
+}
+
+.guides__text {
+    padding-top: 20px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    color: #7D7987;
+}
+
+.guides__btn {
+    margin-top: 39px;
+    width: 164px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 60px;
+}
+
+/* guides end */
+
+
+
+
+
+
+
