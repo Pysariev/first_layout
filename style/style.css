@@ -258,10 +258,10 @@ body {
     font-size: 36px;
     line-height: 50px;
     color: #000000;
-    padding-bottom: 20px;
 }
 
 .new-wey__text {
+    padding-top: 20px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
@@ -482,11 +482,18 @@ body {
 }
 /* destinations end */
 
-
 /* guides start */
 
 .guides {
     position: relative;
+}
+
+.guides::before{
+    content: url(../img/circle_small.png);
+    display: block;
+    top: 85px;
+    left: 285px;
+    position: absolute;
 }
 
 .guides__wrapper {
@@ -496,6 +503,23 @@ body {
     width: 1206px;
     height: 542px;
     margin: 173px 154px 0 240px;
+    position: relative;
+}
+
+.guides__wrapper::after{
+    content: url(../img/cross_right.png);
+    display: block;
+    bottom: 96px;
+    left: 416px;
+    position: absolute;
+}
+
+.guides__wrapper::before{
+    content: url(../img/cross_small.png);
+    display: block;
+    top: 37px;
+    right: 0;
+    position: absolute;
 }
 
 .guides__content{
@@ -506,7 +530,7 @@ body {
 
 .guides__text {
     padding-top: 20px;
-    font-family: 'Mulish';
+    /* font-family: 'Mulish'; */
     font-style: normal;
     font-weight: 300;
     font-size: 17px;
@@ -526,6 +550,11 @@ body {
 }
 
 /* guides end */
+
+/* testimonials start */
+
+
+/* testimonials end */
 
 
 
