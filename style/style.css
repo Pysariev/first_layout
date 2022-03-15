@@ -254,7 +254,7 @@ body {
 .caption {
     font-family: 'Playfair Display';
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 50px;
     color: #000000;
@@ -552,6 +552,175 @@ body {
 
 /* testimonials start */
 
+.testimonials__wrapper {
+    width: 1180px;
+    height: 616px;
+    margin: 248px 323px 0 96px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.testimonials__wrapper::after {
+    position: absolute;
+    content: url(../img/circle22.png);
+    display: block;
+    left: 0;
+    top: 299px;
+}
+
+.testimonials__content {
+    width: 450px;
+    margin-left: 144px;
+}
+
+.testimonials__caption {
+    width: 417px;
+    margin-bottom: 145px;
+}
+
+.rating-area {
+    overflow: hidden;
+	width: 265px;
+    margin: 0 0 30px -55px;
+}
+
+.rating-area:not(:checked) > input {
+	display: none;
+}
+
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 42px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+
+.rate-area > label:active {
+	position: relative;
+}
+
+.testimonials__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.testimonials__caption-name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.testimonials__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 48px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.testimonials__card {
+    position: relative;
+    width: 417px;
+    height: 523px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 93px;
+}
+
+.testimonials__card:hover {
+    cursor: pointer;
+}
+
+.testimonials__card::after {
+    content: url(../img/big_circle.png);
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.testimonials__card::before {
+    content: url(../img/big_cross.png);
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.testimonials__img {
+    background-image: url(../img/photo_small.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    width: 384px;
+    height: 491px;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.testimonials__slider {
+    width: 132px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 16px 0px 0px 0px;
+    position: relative;
+}
+
+.testimonials__slider::after{
+    content: url(../img/previous.png);
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 30px;
+}
+
+.testimonials__slider::before{
+    content: url(../img/next.png);
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+}
 
 /* testimonials end */
 
